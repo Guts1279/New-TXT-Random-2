@@ -58,10 +58,10 @@ async def account_login(bot: Client, m: Message):
     with open(file_name, "w") as file:
         file.write(raw_text)
     
-    await bot.send_document(chat_id=m.chat.id, document=file_name, caption="TXT File Converted by @mradarshr Bot")
+    await bot.send_document(chat_id=m.chat.id, document=file_name, caption="TXT File Converted by @Zeddyjo Bot")
     os.remove(file_name)
 
-@bot.on_message(filters.command(["babu"]))
+@bot.on_message(filters.command(["guts"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
