@@ -30,7 +30,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    await m.reply_text("**✌️ʜᴇʟʟᴏ, ᴍʏ ꜰʀɪᴇɴᴅ🌝.**\n\n**ɪ ᴀᴍ @mradarshr ʙᴏᴛ.**\n**ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ᴛᴇxᴛ ꜰɪʟᴇ ʟɪɴᴋꜱ.**")
+    await m.reply_text("**✌️ʜᴇʟʟᴏ, ᴍʏ ꜰʀɪᴇɴᴅ🌝.**\n\n**ɪ ᴀᴍ @Zeddyjo ʙᴏᴛ.**\n**ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ᴛᴇxᴛ ꜰɪʟᴇ ʟɪɴᴋꜱ, just send the secret cammand ☺️**")
 
 
 @bot.on_message(filters.command("stop"))
@@ -59,13 +59,13 @@ async def account_login(bot: Client, m: Message):
         with open(file_name, "w") as file:
             file.write(raw_text)
         
-        await bot.send_document(chat_id=m.chat.id, document=open(file_name, "rb"), caption="TXT File Converted by @mradarshr Bot")
+        await bot.send_document(chat_id=m.chat.id, document=open(file_name, "rb"), caption="TXT File Converted by 𝐆-𝐔𝐓𝐒🪽 Bot")
         os.remove(file_name)
     except Exception as e:
         await m.reply_text('Failed: ' + str(e))
 
 
-@bot.on_message(filters.command(["ved"]))
+@bot.on_message(filters.command(["guts"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
@@ -116,7 +116,7 @@ async def account_login(bot: Client, m: Message):
     highlighter = f"️ ⁪⁬⁮⁮⁮"
     MR = highlighter if raw_text3 == 'Robin' else raw_text3
 
-    await editable.edit("Now send the Thumb url for Video\nEg » https://i.ibb.co/yqHF2HK/vedxpw.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url for Video\nEg » https://i.ibb.co/yqHF2HK/𝐆-𝐔𝐓𝐒🪽.jpg \n Or if don't want thumbnail send = no")
     input6: Message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -185,8 +185,8 @@ async def account_login(bot: Client, m: Message):
             ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]" if "youtu" in url else f"b[height<={raw_text2}]/bv[height<={raw_text2}]+ba/b/bv+ba"
             cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
-            cc = f"**📂 ғɪʟᴇɴᴀᴍᴇ :** {str(count).zfill(3)}) {name1}.mkv\n\n**ʙᴀᴛᴄʜ** » {raw_text0}\n\n**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ »** {MR}"
-            cc1 = f"**📂 ғɪʟᴇɴᴀᴍᴇ :** {str(count).zfill(3)}) {name1}.pdf\n\n**ʙᴀᴛᴄʜ** » {raw_text0}\n\n**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ »** {MR}"
+            cc = f"**📂 ғɪʟᴇɴᴀᴍᴇ :** {str(count).zfill(3)}) {name1}.mkv\n\n**ʙᴀᴛᴄʜ** » {raw_text0}\n\n**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ »** {𝐆-𝐔𝐓𝐒🪽}"
+            cc1 = f"**📂 ғɪʟᴇɴᴀᴍᴇ :** {str(count).zfill(3)}) {name1}.pdf\n\n**ʙᴀᴛᴄʜ** » {raw_text0}\n\n**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ »** {𝐆-𝐔𝐓𝐒🪽}"
 
             if "drive" in url:
                 try:
@@ -213,7 +213,7 @@ async def account_login(bot: Client, m: Message):
                     time.sleep(e.x)
                     continue
             else:
-                Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** @VEDxPW"
+                Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** @Zeddyjo"
                 prog = await m.reply_text(Show)
                 res_file = await helper.download_video(url, cmd, name)
                 filename = res_file
@@ -230,7 +230,7 @@ async def account_login(bot: Client, m: Message):
             await m.reply_text(f"**Downloading Interrupted **\n {str(e)}\n**Name** » {name}\n**Link** » `{url}`")
             continue
 
-    await m.reply_text("❚█═ 𝔻𝕆𝕎ℕ𝕃𝕆𝔸𝔻𝕀ℕ𝔾 ℂ𝕆𝕄ℙ𝕃𝔼𝕋𝔼 ═█❚\n▼△▼△▼△ Λᴅᴀʀsʜ ʀᴀᴛʜᴀᴜʀ ▼△▼△▼△")
+    await m.reply_text("❚█═ 𝔻𝕆𝕎ℕ𝕃𝕆𝔸𝔻𝕀ℕ𝔾 ℂ𝕆𝕄ℙ𝕃𝔼𝕋𝔼 ═█❚\n▼△▼△▼△ 𝐆-𝐔𝐓𝐒🪽 ▼△▼△▼△")
 
 print("Bot Started Sir")
 bot.run()
