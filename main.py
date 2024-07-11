@@ -30,7 +30,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    await m.reply_text("**✌️ʜᴇʟʟᴏ, ᴍʏ ꜰʀɪᴇɴᴅ🌝.**\n\n**ɪ ᴀᴍ @Zeddyjo ʙᴏᴛ.**\n**ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ᴛᴇxᴛ ꜰɪʟᴇ ʟɪɴᴋꜱ.**")
+    await m.reply_text("**✌️ʜᴇʟʟᴏ, ᴍʏ ꜰʀɪᴇɴᴅ🌝.**\n\n**ɪ ᴀᴍ @Zeddyjo ʙᴏᴛ.**\n**ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ʏᴏᴜʀ ᴛᴇxᴛ ꜰɪʟᴇ ʟɪɴᴋꜱ, just send the secret cammand ☺️**")
 
 
 @bot.on_message(filters.command("stop"))
